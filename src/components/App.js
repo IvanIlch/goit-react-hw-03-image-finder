@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import PropTypes from "prop-types";
 
 import Searchbar from "./searchbar/Searchbar";
 import StartLayout from "./startLayout/StartLayout";
@@ -12,16 +11,6 @@ import Spiner from "./loader/Loader";
 import fetchWithQuery from "../utils/imageApi";
 
 export default class App extends Component {
-  // static propTypes = {
-  //   state: {
-  //     images: PropTypes.array,
-  //     spiner: PropTypes.bool.isRequired,
-  //     error: PropTypes.string,
-  //     searchQuery: PropTypes.string,
-  //     page: PropTypes.number.isRequired,
-  //     largeImageURL: bool.isRequired,
-  //   },
-  // };
   state = {
     images: [],
     spiner: false,

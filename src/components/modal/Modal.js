@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Modal({ onHandleClick, img }) {
   return (
@@ -9,3 +10,8 @@ export default function Modal({ onHandleClick, img }) {
     </div>
   );
 }
+
+Modal.propTypes = {
+  img: PropTypes.string,
+  onHandleClick: PropTypes.func,
+};

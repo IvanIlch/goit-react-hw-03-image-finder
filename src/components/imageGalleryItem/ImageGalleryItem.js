@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function ImageGalleryItem({ img, alt, large, onHandleModal }) {
   return (
@@ -12,3 +13,9 @@ export default function ImageGalleryItem({ img, alt, large, onHandleModal }) {
     </li>
   );
 }
+ImageGalleryItem.propTypes = {
+  img: PropTypes.string,
+  alt: PropTypes.string,
+  large: PropTypes.string,
+  onHandleModal: PropTypes.func,
+};
