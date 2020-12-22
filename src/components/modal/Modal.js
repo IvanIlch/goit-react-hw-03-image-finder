@@ -12,6 +12,6 @@ export default function Modal({ onHandleClick, img }) {
 }
 
 Modal.propTypes = {
-  img: PropTypes.string,
+  img: PropTypes.string.isRequired,
   onHandleClick: PropTypes.func,
 };

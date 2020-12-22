@@ -14,8 +14,8 @@ export default function ImageGalleryItem({ img, alt, large, onHandleModal }) {
   );
 }
 ImageGalleryItem.propTypes = {
-  img: PropTypes.string,
+  img: PropTypes.string.isRequired,
   alt: PropTypes.string,
-  large: PropTypes.string,
+  large: PropTypes.string.isRequired,
   onHandleModal: PropTypes.func,
 };
